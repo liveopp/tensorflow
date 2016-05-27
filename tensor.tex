@@ -60,7 +60,25 @@ Regression）等。这些模型的结构基本上可以看成带有一层隐层�
 又称作Deep Belif Network(DBN). 之后Vincent等\cite{vincent2008extracting}
 提出了更好训练的Denoise autoencoder(dA)模型, 也可以做无监督的特征学习.
 
-\section{}
+\section{卷积神经网络(CNN)}
+1998年LeCun等\cite{lecun1998gradient}将CNN运用于手写数字识别, 取得了巨大
+的成功, 下面结合手写数字数据集MINIST介绍CNN.
+
+MNIST是一个入门级的计算机视觉数据集，它包含各种手写数字图片
+
+\center{\includegraphics[width=.8\textwidth]{minist}}
+
+它也包含每一张图片对应的标签，告诉我们这个是数字几。
+比如，上面这四张图片的标签分别是5，0，4，1。
+我们要训练一个机器学习模型用于预测图片里面的数字
+
+\subsection{卷积}
+
+首先介绍卷积, 直接给出一个具体的例子：假设你已经有
+一个3x3的卷积核, 那么就可以用它提取5x5的样本所具有的特征.
+如\autoref{fig:conv}所示, 我们对5x5的图像的每个3x3 的小块
+图像区域都进行卷积运算, 结果变为3x3个卷积特征.
+\begin{
 
 \bibliographystyle{alpha}
 \bibliography{ref}
